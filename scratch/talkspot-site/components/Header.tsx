@@ -142,8 +142,8 @@ export default function Header() {
           </div>
           {/* Toggle Button in Header */}
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle" onClick={toggleMobileMenu} aria-label="Toggle Navigation">
-              <span className="flaticon-menu"></span>
+            <button type="button" className="navbar-toggle" onClick={toggleMobileMenu} aria-label={isMobileMenuOpen ? "Close navigation" : "Toggle Navigation"}>
+              <span className={isMobileMenuOpen ? "flaticon-close" : "flaticon-menu"}></span>
             </button>
           </div>
           

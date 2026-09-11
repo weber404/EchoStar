@@ -122,7 +122,7 @@ export default function Navbar() {
         {/* End Header Upper */}
 
         {/* Sticky Header */}
-        <div className={`sticky-header style-five ${isSticky ? 'animated slideInDown' : ''}`} style={{ display: isSticky ? 'block' : 'none' }}>
+        <div className={`sticky-header style-five ${isSticky ? 'animated slideInDown' : ''} d-none d-xl-block`}>
           <div className="auto-container">
             <div className="wrapper-box">
               <div className="logo-column">
@@ -155,7 +155,10 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div className="mobile-menu style-five">
+        <div
+          className={`mobile-menu style-five ${isSticky ? 'animated slideInDown' : ''}`}
+          style={isSticky ? { position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 99999, boxShadow: '0px 0px 10px rgba(0,0,0,0.1)' } : {}}
+        >
           <div className="menu-box">
             <div className="logo">
               <Link to="/">
@@ -174,9 +177,9 @@ export default function Navbar() {
                   type="button"
                   className="navbar-toggle"
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  aria-label="Toggle navigation"
+                  aria-label={mobileMenuOpen ? "Close navigation" : "Toggle navigation"}
                 >
-                  <span className="flaticon-menu"></span>
+                  <span className={mobileMenuOpen ? "flaticon-close" : "flaticon-menu"}></span>
                 </button>
               </div>
 
@@ -193,18 +196,16 @@ export default function Navbar() {
                     <Link to="/about">About Us</Link>
                   </li>
                   <li className={`dropdown ${isServicesActive ? 'current' : ''}`}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <Link to="/services">Services</Link>
-                      <div
-                        className="dropdown-btn"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setMobileServicesOpen(!mobileServicesOpen);
-                        }}
-                        style={{ cursor: 'pointer', padding: '10px 15px' }}
-                      >
-                        <span className={`fa ${mobileServicesOpen ? 'fa-angle-up' : 'fa-angle-down'}`}></span>
-                      </div>
+                    <Link to="/services">Services</Link>
+                    <div
+                      className="dropdown-btn"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setMobileServicesOpen(!mobileServicesOpen);
+                      }}
+                      style={{ position: 'absolute', left: '70px', right: 'auto', top: '2px' }}
+                    >
+                      <span className={`fa ${mobileServicesOpen ? 'fa-angle-up' : 'fa-angle-down'}`}></span>
                     </div>
                     <ul style={{ display: mobileServicesOpen ? 'block' : 'none' }}>
                       <li className={isActive(['/abatherapy', '/abatherapy.html']) ? 'current' : ''}>
