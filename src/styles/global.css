@@ -1,0 +1,565 @@
+/* =========================================================
+   EchoStar / Talkspot - Global CSS
+   Preserving all original styles and custom classes
+   ========================================================= */
+
+@import '/css/bootstrap.css';
+@import '/css/jquery-ui.css';
+@import '/css/bootstrap-select.min.css';
+@import '/css/swiper.min.css';
+@import '/css/flaticon.css';
+@import '/css/font-awesome.css';
+@import '/css/animate.css';
+@import '/css/custom-animate.css';
+@import '/css/jquery.fancybox.min.css';
+@import '/css/owl.css';
+@import '/css/style.css';
+@import '/css/responsive.css';
+
+/* Scroll to top styles */
+.single-item-carousel,
+.owl-carousel.single-item-carousel,
+.owl-carousel {
+    display: block !important;
+}
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 55px;
+    height: 55px;
+    background: #e9212e;
+    border: 2px solid #e9212e;
+    border-radius: 0%;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    transition: all 500ms ease 0s;
+    z-index: 99999999999;
+    box-shadow: 0px 5px 10px -10px rgba(27, 27, 27, 1);
+}
+
+.scroll-to-top.visible {
+    display: block;
+}
+
+.scroll-to-top:hover {
+    opacity: .5;
+}
+
+.scroll-to-top-style2 {
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    background: #e9212e;
+    border: 2px solid #e9212e;
+    width: 55px;
+    height: 55px;
+    border-radius: 0%;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: normal;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    transition: all 500ms ease 0s;
+    z-index: 9999999999999;
+    box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
+}
+
+.scroll-to-top-style2:hover {
+    opacity: .5;
+}
+
+/* 3D Coverflow Collection Carousel Styles */
+.collection {
+    min-height: 600px;
+    background-color: #1e232e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 60px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.collection .mySwiper {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.collection .swiper-slide {
+    width: 340px !important;
+    max-width: 85vw;
+    height: 450px !important;
+    background-color: #1b1f2a;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border-bottom: 4px solid #0099ff;
+    border-top: 4px solid #0099ff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.collection .swiper-slide img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: block;
+}
+
+.collection .text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 10px;
+}
+
+.collection .text-content h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.collection .btn {
+    background-color: #0099ff;
+    color: #ffffff;
+    padding: 8px 22px;
+    border: 2px solid #0099ff;
+    outline: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin: 5px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.collection .btn:hover {
+    background-color: transparent;
+    color: #0099ff;
+}
+
+/* Floating WhatsApp Buttons */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    right: 2px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float:hover {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.float1 {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 90px;
+    left: 2px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float1:hover {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.my-float {
+    margin-top: 0px;
+}
+
+/* Button999 Uiverse */
+.button999 {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    border: 2px solid #2c9caf;
+    display: inline-block;
+}
+
+.button999:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button999::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.button999:hover::before {
+    width: 250%;
+}
+
+.wavecontainer>svg {
+    display: block;
+}
+
+.wave-container {
+    position: relative;
+    background: #09F;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* =========================================================
+   TALKSPOT / ECHOSTAR SERVICES SECTION (Exact 1:1 match)
+   ========================================================= */
+.talkspot-services,
+.echostar-services {
+    padding: 90px 0;
+    background: #fff;
+    width: 100%;
+}
+
+.talkspot-services .container,
+.echostar-services .container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Heading */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    display: inline-block;
+    color: #2aa6d9;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #1c2b64;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Layout */
+.service-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Left Image */
+.service-image {
+    width: 33%;
+    flex-shrink: 0;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
+    object-fit: cover;
+}
+
+/* Right Services */
+.service-list {
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    flex-grow: 1;
+}
+
+.service-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 14px;
+    text-align: center;
+    color: #ff6b35;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    transition: .35s;
+    cursor: pointer;
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eef2f7;
+    text-decoration: none;
+}
+
+.service-item:hover {
+    background: #2aa6d9;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .service-wrapper {
+        flex-direction: column !important;
+    }
+    .service-image,
+    .service-list {
+        width: 100% !important;
+    }
+    .service-image {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .service-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-title h2 {
+        font-size: 34px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .talkspot-services,
+    .echostar-services {
+        padding: 60px 0;
+    }
+    .service-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .service-item {
+        min-height: 60px;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .section-title span {
+        font-size: 18px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
+
+/* =========================================================
+   HERO BANNER SECTION (Exact 1:1 match)
+   ========================================================= */
+.banner-section.style-six {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background: #1c2b64;
+}
+
+.banner-section.style-six .banner-slider {
+    width: 100%;
+    height: 650px !important;
+}
+
+.banner-section.style-six .swiper-slide {
+    width: 100%;
+    height: 100% !important;
+    min-height: 650px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.banner-section.style-six .swiper-slide:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: "";
+    z-index: 1;
+}
+
+.banner-section.style-six .content-outer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-section.style-six .content-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner-section.style-six .content-box .inner {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.banner-section.style-six .content-box h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 991px) {
+    .banner-section.style-six,
+    .banner-section.style-six .banner-slider,
+    .banner-section.style-six .swiper-slide {
+        min-height: 500px;
+        height: 500px !important;
+    }
+    .banner-section.style-six .content-box h1 {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-section.style-six,
+    .banner-section.style-six .banner-slider,
+    .banner-section.style-six .swiper-slide {
+        min-height: 420px;
+        height: 420px !important;
+    }
+    .banner-section.style-six .content-box h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+}
+
+/* Page Title background */
+.page-title {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/nimg/ABA-Therapy-Banner-Image-2.jpg);
+}
+
+@media only screen and (max-width: 800px) {
+    .page-title {
+        background-image: url(/nimg/yy2.webp);
+    }
+}
+
+/* Lightbox overlay modal styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}
+
+.lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lightbox-prev, .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    user-select: none;
+    transition: background 0.3s;
+}
+
+.lightbox-prev:hover, .lightbox-next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }

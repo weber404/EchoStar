@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Goodsoul_html/account.html  20 Nov 2019 03:31:25 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <title>EchoStar - Speech & Language Therapy Centre</title>
+
+    <link rel="shortcut icon" href="nimg/logo5.png?v=9" type="image/x-icon">
+    <link rel="icon" href="nimg/logo5.png?v=9" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/flaticon.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/custom-animate.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/owl.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <style>
+        .scroll-to-top {
+            position: fixed;
+            right: 20px;
+            bottom: 30px;
+            width: 55px;
+            height: 55px;
+            background: #e9212e;
+            border: 2px solid #e9212e;
+            border-radius: 0%;
+            color: #ffffff;
+            font-size: 25px;
+            line-height: 50px;
+            font-weight: 400;
+            cursor: pointer;
+            display: none;
+            text-align: center;
+            transition: all 500ms ease 0s;
+            z-index: 99999999999;
+            box-shadow: 0px 5px 10px -10px rgba(27, 27, 27, 1);
+        }
+        
+        .scroll-to-top:hover {
+            opacity: .5;
+        }
+        
+        .scroll-to-top-style2 {
+            position: fixed;
+            bottom: 25px;
+            right: 15px;
+            background: #e9212e;
+            border: 2px solid #e9212e;
+            width: 55px;
+            height: 55px;
+            border-radius: 0%;
+            color: #ffffff;
+            font-size: 25px;
+            line-height: 50px;
+            font-weight: normal;
+            cursor: pointer;
+            display: none;
+            text-align: center;
+            transition: all 500ms ease 0s;
+            z-index: 9999999999999;
+            box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
+        }
+        
+        .scroll-to-top-style2:hover {
+            opacity: .5;
+        }
+        
+        .collection {
+            height: 100vh;
+            background-color: #1e232e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .collection .content {
+            height: 28rem;
+            width: 25rem;
+            background-color: #1b1f2a;
+            border: .2rem solid rgba(255, 255, 255, .1);
+            border-radius: .7rem;
+            border-bottom: .4rem solid #0099ff;
+            border-top: .4rem solid #0099ff;
+            overflow: hidden;
+            /* padding: .2rem; */
+        }
+        
+        .content img {
+            width: 100%;
+            border-bottom-left-radius: .6rem;
+            border-bottom-right-radius: .6rem;
+        }
+        
+        .text-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .text-content h3 {
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+        
+        .text-content p {
+            max-width: 22rem;
+            font-size: .8rem;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .btn {
+            background-color: #0099ff;
+            padding: .2rem;
+            border: 2px solid #0099ff;
+            outline: none;
+            font-size: .8rem;
+            border-radius: .5rem;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+        
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 2px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            border: 2px solid #fff;
+        }
+        
+        .float:hover {
+            background-color: #25d366;
+            color: #fff;
+        }
+        
+        .float1 {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            left: 2px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            border: 2px solid #fff;
+        }
+        
+        .float1:hover {
+            background-color: #25d366;
+            color: #fff;
+        }
+        
+        .my-float {
+            margin-top: 16px;
+        }
+        /* From Uiverse.io by vikiWayne */
+        
+        .button999 {
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #2c9caf;
+            transition: all 1000ms;
+            font-size: 15px;
+            position: relative;
+            overflow: hidden;
+            outline: 2px solid #2c9caf;
+            border: 2px solid #2c9caf;
+        }
+        
+        .button999:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+            outline: 2px solid #70bdca;
+            box-shadow: 4px 5px 17px -4px #268391;
+        }
+        
+        .button999::before {
+            content: "";
+            position: absolute;
+            left: -50px;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: #2c9caf;
+            transform: skewX(45deg);
+            z-index: -1;
+            transition: width 1000ms;
+        }
+        
+        .button999:hover::before {
+            width: 250%;
+        }
+        
+        .wavecontainer>svg {
+            display: block;
+        }
+        
+        .wave-container {
+            position: relative;
+            background: #09F;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .page-title {
+            background-image: url(nimg/ABA-Therapy-Banner-Image-2.jpg);
+        }
+        
+        @media only screen and (max-width: 800px) {
+            .page-title {
+                background-image: url(nimg/yy2.webp);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://api.whatsapp.com/send?phone=+91-9812506562&text=Hello,I Want to Know About..." class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+
+    </a>
+    <a href="tel:+91-9812506562" class="float1" target="_blank">
+        <i class="fa fa-phone my-float"></i>
+    </a>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="loader-wrap">
+            <div class="preloader"></div>
+            <div class="layer layer-one"><span class="overlay"></span></div>
+            <div class="layer layer-two"><span class="overlay"></span></div>
+            <div class="layer layer-three"><span class="overlay"></span></div>
+        </div>
+
+        <!-- Main Header-->
+        <header class="main-header">
+
+
+            <!-- Header Upper -->
+            <div class="header-upper">
+                <div class="auto-container">
+                    <div class="wrapper-box">
+                        <div class="logo-column">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"><img src="nimg/logo3.png?v=9" alt="EchoStar" title="EchoStar" style="height: 6.5rem; max-width: 340px; width: auto; object-fit: contain;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <div class="option-wrapper">
+                                <div class="nav-outer">
+                                    <!-- Main Menu -->
+                                    <nav class="main-menu navbar-expand-xl navbar-dark">
+
+                                        <div class="collapse navbar-collapse">
+                                            <ul class="navigation">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+
+                                                <li class="dropdown current"><a href="#">Services</a>
+                                                    <ul>
+                                                        <li><a href="abatherapy.html">ABA Therapy</a></li>
+                                                        <li><a href="speech.html">Speech Therapy</a></li>
+                                                        <li><a href="language.html">Language &#038; Communication Therapy</a></li>
+                                                        <li><a href="oralfeeding.html">Speech Clarity and Oral Feeding Therapy</a></li>
+                                                        <li><a href="stutering.html">Stuttering Stammering Therapy</a></li>
+                                                        <li><a href="specialedu.html">Special Education Therapy</a></li>
+                                                        <li><a href="occupation.html">Occupational Therapy</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <!-- Main Menu End-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+
+            <!--End Header Upper-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="wrapper-box">
+                        <div class="logo-column">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"><img src="nimg/logo3.png?v=9" style="height: 4.8rem; max-width: 250px; width: auto; object-fit: contain;" alt="EchoStar" title="EchoStar"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <div class="nav-outer">
+
+                                <div class="nav-inner">
+
+                                    <!-- Main Menu -->
+                                    <nav class="main-menu navbar-expand-xl navbar-dark">
+
+                                        <div class="collapse navbar-collapse">
+                                            <ul class="navigation">
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <!-- Main Menu End-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu style-one">
+                <div class="menu-box">
+                    <div class="logo">
+                        <a href="index.html"><img src="nimg/logo3.png?v=9" alt="EchoStar" style="height: 4.5rem; max-width: 230px; width: auto; object-fit: contain;"></a>
+                    </div>
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-xl navbar-dark">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="flaticon-menu"></span>
+                        </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navigation">
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+
+                </div>
+
+            </div>
+            <!-- End Mobile Menu -->
+
+            <div class="nav-overlay">
+                <div class="cursor"></div>
+                <div class="cursor-follower"></div>
+            </div>
+        </header>
+        <!-- End Main Header -->
+
+        <!-- Hidden Sidebar -->
+        <section class="hidden-sidebar close-sidebar">
+            <div class="wrapper-box">
+                <div class="hidden-sidebar-close"><span class="flaticon-cross"></span></div>
+                <div class="logo">
+                    <a href="#"><img src="images/echostar-logo.png?v=4" alt=""></a>
+                </div>
+                <div class="content">
+                    <div class="about-widget-four sidebar-widget">
+                        <h3>To improve learning environment in primary schools</h3>
+                        <div class="text">We denounce with righteous indignation and dislike men who we are to beguiled demoralized by the charms of pleasures that moment, so we blinded desires, that they indignations.</div>
+                    </div>
+                    <!-- News Widget -->
+                    <div class="news-widget-two sidebar-widget">
+                        <div class="widget-title">News & Updates</div>
+                        <div class="post-wrapper">
+                            <div class="image">
+                                <a href="blog-details.html"><img src="images/resource/post-thumb-1.jpg" alt=""></a>
+                            </div>
+                            <div class="category">LIFE SAVING</div>
+                            <h4><a href="blog-details.html">Goodsoul partners with lafarge on national literacy competition</a></h4>
+                        </div>
+                        <div class="post-wrapper">
+                            <div class="image">
+                                <a href="blog-details.html"><img src="images/resource/post-thumb-2.jpg" alt=""></a>
+                            </div>
+                            <div class="category">Education</div>
+                            <h4><a href="blog-details.html">Goodsoul improves education infrastructure</a></h4>
+                        </div>
+                    </div>
+                    <!-- Newsletter Widget -->
+                    <div class="newsletter-widget-two">
+                        <div class="widget-title">Newsletter Subscription</div>
+                        <form action="#">
+                            <input type="email" placeholder="Enter Email Address">
+                            <button class="theme-btn btn-style-one w-100"><i class="flaticon-next"></i><span>Subscribe Us</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page Title -->
+        <!-- Page Title -->
+        <section class="page-title">
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>Special Education Therapy</h1>
+                    <ul class="bread-crumb">
+                        <li><a class="home" href="index.html"><span class="fa fa-home"></span></a></li>
+                        <li>Special Education Therapy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section style="margin-bottom: 2rem;">
+            <div class="auto-container">
+                <center style="padding-bottom: 1rem;">
+                    <h1 style="margin-top: 4rem; color: blueviolet;">Special Education Therapy</h1>
+                </center>
+                <div class="row">
+                    <div class="col-lg-6 pr-lg-5">
+                        <div class="single-item-carousel owl-carousel owl-nav-none ">
+                            <img src="nimg/special.jpg" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content">
+
+
+                            <div class="text">EchoStar is committed to providing Special Education Therapy that supports the unique learning needs of children with developmental and learning disabilities. Our team of specialized educators and therapists work collaboratively
+                                to create individualized education plans (IEPs) tailored to each child's strengths, challenges, and goals. We believe that every child has the potential to succeed, and our therapy is designed to unlock that potential by
+                                addressing the specific learning difficulties they may face.
+                            </div> <br>
+                            <div class="text">
+                                Our Special Education Therapy focuses on enhancing cognitive, social, emotional, and academic skills. We employ evidence-based strategies and interventions to help children overcome barriers to learning, improve their focus, and develop essential life
+                                skills. Our approach is holistic, considering not just academic performance but also the child’s overall well-being and social development.
+                            </div> <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Main Footer -->
+        <footer class="main-footer style-five" style="background-color: #0099ff;">
+            <div class="auto-container">
+                <div class="widget-wrapper">
+                    <div class="row">
+                        <!-- Post Widget -->
+                        <div class="col-lg-4 col-md-6 about-widget-five footer-widget">
+                            <img src="nimg/logo-footer.png?v=9" style="height: 6.5rem; max-width: 320px; width: auto; object-fit: contain; margin-bottom: 20px;" alt="EchoStar">
+                            <!-- <h4 class="widget-title">About Us</h4> -->
+                            <div style="color: white;" class="text">The great explorer of the truth, theats masters builders off human happiness no one rejects all of dislikes, or avoids all pleasures itself, because it’s pleasures rationally encounter expounds actually our great explorer of
+                                thetruth.
+                            </div>
+
+                        </div>
+                        <!-- Link Widget -->
+                        <div class="col-lg-4 col-md-6 link-widget-three footer-widget">
+                            <h4 class="widget-title">quick Links</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a style="color: white;" href="index.html">Home</a></li>
+                                        <li><a style="color: white;" href="about.html">About Us</a></li>
+                                        <li><a style="color: white;" href="stutering.html">Service</a></li>
+                                        <li><a style="color: white;" href="gallery.html">Gallery</a></li>
+
+                                        <li><a style="color: white;" href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <ul>
+                                        <li><a style="color: white;" href="abatherapy.html">ABA Therapy</a></li>
+                                        <li><a style="color: white;" href="speech.html">Speech Therapy</a></li>
+                                        <li><a style="color: white;" href="language.html">Language Therapy</a></li>
+                                        <li><a style="color: white;" href="occupation.html">Occupational therapy</a></li>
+                                        <li><a style="color: white;" href="oralfeeding.html">Speech Clarity</a></li>
+                                        <li><a style="color: white;" href="specialedu.html">Special Education</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- Post Widget -->
+                        <div class="col-lg-4 col-md-6 about-widget-five footer-widget">
+                            <h4 class="widget-title">Address</h4>
+                            <div style="color: white; margin-bottom: 15px;" class="text"><i class="fa-solid fa-location-dot"></i> Gurugram, Sohna, Faridabad, Delhi</div>
+                            <h4 class="widget-title">Contact Us</h4>
+                            <ul>
+                                <li><strong><i class="fa-solid fa-phone"></i>Phone:</strong> <a style="color: white;" href="tel:+919812506562"> +91-9812506562 </a></li>
+                                <li><strong><i class="fa-solid fa-envelope"></i>Email:</strong> <a style="color: white;" href="mailto:echostar.india@gmail.com"> echostar.india@gmail.com </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="copy-right-text"><a style="color: white;" href="templateshub.net">Design & Developed by</a><a style="color: white;" class="theme-color-four" href="#">Eindiadeal</a></div>
+            </center>
+
+    </div>
+    </div>
+
+
+    </footer>
+
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+
+    <!--End pagewrapper-->
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            autoplay: {
+
+                delay: 1000,
+                disableOnInteraction: false,
+            }
+
+        });
+    </script>
+
+    <!-------------------github AOS---------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 2000,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".myySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 150,
+                modifier: 2.5,
+                slideShadows: true,
+            },
+            autoplay: {
+
+                delay: 2000,
+                disableOnInteraction: false,
+            }
+
+        });
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/menu-nav-btn.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/isotope.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+<!-- Goodsoul_html/index-5.html  20 Nov 2019 03:30:27 GMT -->
+
+</html>

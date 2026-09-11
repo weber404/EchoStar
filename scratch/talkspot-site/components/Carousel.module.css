@@ -1,0 +1,97 @@
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  position: relative;
+}
+
+/* Navigation Controls */
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--secondary);
+  border: 1px solid var(--border-color);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-fast), 
+              background-color var(--transition-fast), 
+              color var(--transition-fast);
+}
+
+.button:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: scale(1.05);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--text-gray);
+}
+
+/* Dots Navigation */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  background-color: #cbd5e1;
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), 
+              transform var(--transition-fast);
+}
+
+.dot:hover {
+  background-color: var(--text-gray);
+}
+
+.dotActive {
+  background-color: var(--primary);
+  transform: scale(1.25);
+  width: 16px;
+  border-radius: 4px;
+}

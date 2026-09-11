@@ -1,0 +1,351 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  transition: background-color var(--transition-normal), 
+              height var(--transition-normal), 
+              box-shadow var(--transition-normal);
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  height: 75px;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  width: 42px;
+  height: 42px;
+  background-color: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 20px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 145, 255, 0.2);
+}
+
+.logoBubble {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--accent);
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--secondary);
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.header.sticky .logoTitle {
+  color: var(--secondary);
+}
+
+.logoSubtitle {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+/* Desktop Navigation */
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Translucent color overlay for top-level headers before sticky scroll */
+.header:not(.sticky) .navLink {
+  color: var(--secondary);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.navLink:hover::after,
+.active::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--primary) !important;
+}
+
+/* Services Dropdown */
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownTrigger {
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 260px;
+  background-color: var(--bg-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdownContainer:hover .dropdownMenu,
+.showDropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdownItem {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: var(--transition-fast);
+}
+
+.dropdownItem:hover {
+  background-color: var(--bg-light);
+  color: var(--primary);
+  padding-left: 18px;
+}
+
+.activeDropdownItem {
+  background-color: var(--accent-light);
+  color: var(--accent);
+}
+
+/* Header Call-to-action */
+.headerCta {
+  display: flex;
+}
+
+.headerCta a {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* Mobile Toggle */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--secondary);
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* Mobile Drawer Overlay */
+.mobileDrawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(14, 42, 71, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobileDrawer.open {
+  right: 0;
+}
+
+.mobileDrawerContent {
+  width: 320px;
+  max-width: 85%;
+  height: 100%;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-premium);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: relative;
+}
+
+.mobileDrawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.mobileNavLink {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.activeMobile {
+  color: var(--primary);
+}
+
+.mobileDropdownTrigger {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.chevron {
+  transition: transform var(--transition-fast);
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.mobileSubMenu {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 0 10px 16px;
+  border-left: 2px solid var(--border-color);
+  margin-top: 8px;
+}
+
+.mobileSubMenu.expanded {
+  display: flex;
+}
+
+.mobileSubItem {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+.mobileSubItem:hover,
+.activeSubItem {
+  color: var(--primary);
+}
+
+.mobileDrawerFooter {
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.mobileDrawerFooter p {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.mobileCallBtn {
+  width: 100%;
+  padding: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .desktopNav,
+  .headerCta {
+    display: none;
+  }
+  
+  .menuToggle {
+    display: block;
+  }
+}

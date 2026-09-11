@@ -1,0 +1,109 @@
+.wrapper {
+  position: relative;
+  z-index: 999;
+}
+
+.floatBtn {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform var(--transition-fast), 
+              opacity var(--transition-fast), 
+              visibility var(--transition-fast), 
+              background-color var(--transition-fast);
+  border: none;
+}
+
+.floatBtn:hover {
+  transform: scale(1.1) translateY(-2px);
+}
+
+/* Call Button (Left Side) */
+.callBtn {
+  left: 30px;
+  bottom: 30px;
+  background-color: var(--primary);
+  animation: pulse-phone 2s infinite;
+}
+
+.callBtn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* WhatsApp Button (Right Side) */
+.whatsappBtn {
+  right: 30px;
+  bottom: 30px;
+  background-color: #25D366;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappBtn:hover {
+  background-color: #20ba5a;
+}
+
+/* Scroll to Top (Right Side - Above WhatsApp) */
+.scrollTopBtn {
+  right: 30px;
+  bottom: 100px;
+  background-color: var(--red-accent);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 12px; /* Red square with rounded corners as on original website */
+  width: 48px;
+  height: 48px;
+}
+
+.scrollTopBtn:hover {
+  background-color: #b92b2b;
+}
+
+.scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Pulse Animation for Call Button */
+@keyframes pulse-phone {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 145, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 145, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 145, 255, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floatBtn {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .callBtn {
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  .whatsappBtn {
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .scrollTopBtn {
+    right: 20px;
+    bottom: 80px;
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="0soifw6AXOFvOTxNgNDnNlanut_wH8XFoI2VyISM6fc" />
+    <meta name="google-site-verification" content="vvPQF-SdoiFAVSHeJb24UcCS0b-D06iTcbSyzIZn86g" />
+    <meta name="google-site-verification" content="OpHXA4HbvYaL7GzG7DqdBVTY0WUxU9fbTi8TwplzmVo" />
+    <meta name="google-site-verification" content="YYAFoELYByQDdGYgYDM2xPj-9eRRDHn2wOkcBeCctLA" />
+    <title>EchoStar - Speech & Language Therapy Centre</title>
+
+    <link rel="shortcut icon" href="nimg/logo5.png?v=9" type="image/x-icon">
+    <link rel="icon" href="nimg/logo5.png?v=9" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/flaticon.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/custom-animate.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/owl.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+<style>
+    /* scroll to top styles */
+    
+    .scroll-to-top {
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        width: 55px;
+        height: 55px;
+        background: #e9212e;
+        border: 2px solid #e9212e;
+        border-radius: 0%;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: 400;
+        cursor: pointer;
+        display: none;
+        text-align: center;
+        transition: all 500ms ease 0s;
+        z-index: 99999999999;
+        box-shadow: 0px 5px 10px -10px rgba(27, 27, 27, 1);
+    }
+    
+    .scroll-to-top:hover {
+        opacity: .5;
+    }
+    
+    .scroll-to-top-style2 {
+        position: fixed;
+        bottom: 25px;
+        right: 15px;
+        background: #e9212e;
+        border: 2px solid #e9212e;
+        width: 55px;
+        height: 55px;
+        border-radius: 0%;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: normal;
+        cursor: pointer;
+        display: none;
+        text-align: center;
+        transition: all 500ms ease 0s;
+        z-index: 9999999999999;
+        box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
+    }
+    
+    .scroll-to-top-style2:hover {
+        opacity: .5;
+    }
+    
+    .collection {
+        height: 100vh;
+        background-color: #1e232e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .collection .content {
+        height: 28rem;
+        width: 25rem;
+        background-color: #1b1f2a;
+        border: .2rem solid rgba(255, 255, 255, .1);
+        border-radius: .7rem;
+        border-bottom: .4rem solid #0099ff;
+        border-top: .4rem solid #0099ff;
+        overflow: hidden;
+        /* padding: .2rem; */
+    }
+    
+    .content img {
+        width: 100%;
+        border-bottom-left-radius: .6rem;
+        border-bottom-right-radius: .6rem;
+    }
+    
+    .text-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .text-content h3 {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+    
+    .text-content p {
+        max-width: 22rem;
+        font-size: .8rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .btn {
+        background-color: #0099ff;
+        padding: .2rem;
+        border: 2px solid #0099ff;
+        outline: none;
+        font-size: .8rem;
+        border-radius: .5rem;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 90px;
+        right: 2px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        border: 2px solid #fff;
+    }
+    
+    .float:hover {
+        background-color: #25d366;
+        color: #fff;
+    }
+    
+    .float1 {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 90px;
+        left: 2px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        border: 2px solid #fff;
+    }
+    
+    .float1:hover {
+        background-color: #25d366;
+        color: #fff;
+    }
+    
+    .my-float {
+        margin-top: 16px;
+    }
+    /* From Uiverse.io by vikiWayne */
+    
+    .button999 {
+        padding: 1em 2em;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #2c9caf;
+        transition: all 1000ms;
+        font-size: 15px;
+        position: relative;
+        overflow: hidden;
+        outline: 2px solid #2c9caf;
+        border: 2px solid #2c9caf;
+    }
+    
+    .button999:hover {
+        color: #ffffff;
+        transform: scale(1.1);
+        outline: 2px solid #70bdca;
+        box-shadow: 4px 5px 17px -4px #268391;
+    }
+    
+    .button999::before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #2c9caf;
+        transform: skewX(45deg);
+        z-index: -1;
+        transition: width 1000ms;
+    }
+    
+    .button999:hover::before {
+        width: 250%;
+    }
+    
+    .wavecontainer>svg {
+        display: block;
+    }
+    
+    .wave-container {
+        position: relative;
+        background: #09F;
+        text-align: center;
+        overflow: hidden;
+    }
+
+
+
+
+
+
+
+    .echostar-services {
+    padding: 90px 0;
+    background: #fff;
+}
+
+.echostar-services .container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Heading */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    display: inline-block;
+    color: #2aa6d9;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #1c2b64;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* Layout */
+
+.service-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Left Image */
+
+.service-image {
+    width: 33%;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+/* Right Services */
+
+.service-list {
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.service-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 14px;
+    text-align: center;
+    color: #ff6b35;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    transition: .35s;
+    cursor: pointer;
+    min-height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item:hover {
+    background: #2aa6d9;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Tablet */
+
+@media (max-width:991px){
+
+.service-wrapper{
+    flex-direction:column;
+}
+
+.service-image,
+.service-list{
+    width:100%;
+}
+
+.service-image{
+    max-width:450px;
+}
+
+.service-list{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:767px){
+
+.echostar-services{
+    padding:60px 0;
+}
+
+.service-list{
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.service-item{
+    min-height:60px;
+    font-size:14px;
+    padding:15px;
+}
+
+.section-title span{
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.service-wrapper{
+    gap:30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Reverse Layout */
+.reverse-layout{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    flex-direction:row;
+}
+
+/* Mobile */
+@media (max-width:991px){
+
+.reverse-layout{
+    flex-direction:column-reverse;
+}
+
+}
+</style>
+
+<body>
+    <a href="https://api.whatsapp.com/send?phone=+91-9812506562&text=Hello,I Want to Know About..." class="float" target="_blank">
+        <i class="fa-brands fa-whatsapp my-float"></i>
+
+    </a>
+    <a href="tel:+91-9812506562" class="float1" target="_blank">
+        <i class="fa fa-phone my-float"></i>
+    </a>
+    <!-----end social media icon----->
+
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="loader-wrap">
+            <div class="preloader style-five"></div>
+            <div class="layer layer-one"><span class="overlay"></span></div>
+            <div class="layer layer-two"><span class="overlay"></span></div>
+            <div class="layer layer-three"><span class="overlay"></span></div>
+        </div>
+
+        <!-- Main Header-->
+        <header class="main-header header-style-five">
+
+            <!-- Header Upper -->
+            <div class="header-upper style-five">
+                <div class="auto-container">
+                    <div class="wrapper-box">
+                        <div class="logo-column">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"><img src="nimg/logo3.png?v=9" alt="EchoStar" title="EchoStar" style="height: 6.5rem; max-width: 340px; width: auto; object-fit: contain;"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-column">
+                            <div class="option-wrapper">
+                                <div class="nav-outer">
+                                    <!-- Main Menu -->
+                                    <nav class="main-menu navbar-expand-xl navbar-dark">
+
+                                        <div class="collapse navbar-collapse">
+                                            <ul class="navigation">
+                                                <li class="current"><a href="index.html">Home</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+
+                                                <li class="dropdown"><a href="#">Services</a>
+                                                    <ul>
+                                                        <li><a href="abatherapy.html">ABA Therapy</a></li>
+                                                        <li><a href="speech.html">Speech Therapy</a></li>
+                                                        <li><a href="language.html">Language &#038; Communication Therapy</a></li>
+                                                        <li><a href="oralfeeding.html">Speech Clarity and Oral Feeding Therapy</a></li>
+                                                        <li><a href="stutering.html">Stuttering Stammering Therapy</a></li>
+                                                        <li><a href="specialedu.html">Special Education Therapy</a></li>
+                                                        <li><a href="occupation.html">Occupational Therapy</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <!-- Main Menu End-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+
+            <!--End Header Upper-->
+            <div class="sticky-header style-five">
+                <div class="auto-container">
+                    <div class="wrapper-box">
+                        <div class="logo-column">
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"><img src="nimg/logo3.png?v=9" style="height: 4.8rem; max-width: 250px; width: auto; object-fit: contain;" alt="EchoStar" title="EchoStar"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <div class="nav-outer">
+
+                                <div class="nav-inner">
+
+                                    <!-- Main Menu -->
+                                    <nav class="main-menu navbar-expand-xl navbar-dark">
+
+                                        <div class="collapse navbar-collapse">
+                                            <ul class="navigation">
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <!-- Main Menu End-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu style-five">
+                <div class="menu-box">
+                    <div class="logo">
+                        <a href="index.html"><img src="nimg/logo3.png?v=9" alt="EchoStar" style="height: 4.5rem; max-width: 230px; width: auto; object-fit: contain;"></a>
+                    </div>
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-xl navbar-dark">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="flaticon-menu"></span>
+                        </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navigation">
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <!--Search Box-->
+
+                </div>
+
+            </div>
+            <!-- End Mobile Menu -->
+
+            <div class="nav-overlay">
+                <div class="cursor"></div>
+                <div class="cursor-follower"></div>
+            </div>
+        </header>
+        <!-- End Main Header -->
+
+
+
+
+        <!-- Bnner Section -->
+        <section class="banner-section style-six">
+            <div class="swiper-container banner-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slide Item -->
+                    <div class="swiper-slide" style="background-image: url(newimgg/test.jpg); background-position: center top; background-size: cover;">
+                        <div class="content-outer">
+                            <div class="content-box">
+                                <div class="inner">
+                                    <h1>Occupational <br> Therapy</h1>
+
+                                    <div class="link-box"><a href="contact.html" class="theme-btn btn-style-sixteen "><span>Contact Us</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide" style="background-image: url(newimgg/talk.jpeg); background-position: center top; background-size: cover;">
+                        <div class="content-outer">
+                            <div class="content-box justify-content-center">
+                                <div class="inner text-center">
+                                    <h1>EchoStar</h1>
+
+                                    <div class="link-box"><a href="contact.html" class="theme-btn btn-style-sixteen "><span>Contact Us</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide Item -->
+                    <div class="swiper-slide" style="background-image: url(newimgg/talk2.jpeg); background-position: center top; background-size: cover;">
+                        <div class="content-outer">
+                            <div class="content-box justify-content-end">
+                                <div class="inner">
+                                    <h1>Speech Therapy</h1>
+
+
+                                    <div class="link-box"><a href="contact.html" class="theme-btn btn-style-sixteen "><span>Contact us</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-slider-pagination style-two"></div>
+                <div class="banner-slider-nav style-one">
+                    <div class="banner-slider-control banner-slider-button-prev"><span class="flaticon-arrow-2"></span></div>
+                    <div class="banner-slider-control banner-slider-button-next"><span class="flaticon-arrow-2"></span> </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Bnner Section -->
+
+
+
+        <!-- Causes Section Two -->
+        <section class="causes-section-two">
+            <div class="auto-container">
+                <div class="cause-wrapper">
+                    <div class="row">
+                        <!-- Cause Block two -->
+                        <div class="cause-block-two col-lg-4">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img src="newimgg/speech-therapy.jpeg" style="width: 100%; height: 260px; object-fit: cover; object-position: top; border-radius: 4px;" alt="Speech Therapy">
+                                    <div class="overlay">
+                                        <a href="speech.html" class="theme-btn btn-style-seven"><span>More Details</span></a>
+                                    </div>
+                                </div>
+                                <div class="lower-content">
+                                    <!--Progress Levels-->
+                                    <div class="progress-levels style-two">
+
+                                        <!--Skill Box-->
+
+                                    </div>
+                                    <div class="wrapper-box">
+                                        <h4><a href="speech.html">Speech Therapy</a></h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cause Block two -->
+                        <div class="cause-block-two col-lg-4">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img src="newimgg/aba.jpeg" style="width: 100%; height: 260px; object-fit: cover; object-position: top; border-radius: 4px;" alt="ABA Therapy">
+                                    <div class="overlay">
+                                        <a href="abatherapy.html" class="theme-btn btn-style-seven"><span>More Details</span></a>
+                                    </div>
+                                </div>
+                                <div class="lower-content">
+                                    <!--Progress Levels-->
+                                    <div class="progress-levels style-two">
+
+                                        <!--Skill Box-->
+
+                                    </div>
+                                    <div class="wrapper-box">
+                                        <h4><a href="abatherapy.html">ABA Therapy</a></h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cause Block two -->
+                        <div class="cause-block-two col-lg-4">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <img src="newimgg/tt.jpeg" style="width: 100%; height: 260px; object-fit: cover; object-position: top; border-radius: 4px;" alt="Occupational Therapy">
+                                    <div class="overlay">
+                                        <a href="occupation.html" class="theme-btn btn-style-seven"><span>More Details</span></a>
+                                    </div>
+                                </div>
+                                <div class="lower-content">
+                                    <!--Progress Levels-->
+                                    <div class="progress-levels style-two">
+
+
+                                    </div>
+                                    <div class="wrapper-box">
+                                        <h4><a href="occupation.html">Occupational Therapy</a></h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <br>
+        <!-- About Section Three -->
+        <section style="margin-bottom: 2rem;">
+            <div class="auto-container">
+                <center style="padding-bottom: 1rem;">
+                    <h1>Welcome To EchoStar</h1>
+                </center>
+                <div class="row">
+                    <div class="col-lg-6 pr-lg-5">
+                        <div class="single-item-carousel owl-carousel owl-nav-none ">
+                            <div class="single-product-image-holder">
+
+                                <img src="nimg/ab2.jpg" alt="Awesome Image">
+                            </div>
+                            <div class="single-product-image-holder">
+
+                                <img src="nimg/banner2.jpg" alt="Awesome Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content">
+                            <h3>About Us</h3>
+
+                            <div class="text">There are various reasons for speech delay and other speech-related issues. Here, we provide a 100% scientific and systematic approach to your child’s special needs and cater to a speedy recovery. <br> In our work culture,
+                                we prioritize our patient’s needs, making us the pioneer speech and language therapy center in Gurgaon and many more cities..</div>
+                            <div class="point-block">
+                                <br>
+                                <h4> <span class="flaticon-tick"></span> Our Mission</h4>
+                                <div class="text"> Our mission is to treat speech and language disorders in people of every age. Our mission is to provide the best professional assistance to our patients and see them talking without any problem or delay.
+                                    <center> <button class="button999"><a href="about.html">Read More</a></button></center>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section style="background-color: #1e232e;">
+            <center style="color: white; padding-top: 2rem;">
+                <h1>Our Services</h1>
+            </center>
+            <section class="collection">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="content swiper-slide">
+                            <img src="nimg/Aba therapy.jpg" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">ABA Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/speech.jpg" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">Speech Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/language.jpeg" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">Language & Communication Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/oral.jpg" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; "> Oral Feeding Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/speech clarity.webp" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">Speech Clarity Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/sluttering.jpeg" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">Stuttering Stammering Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/special.jpg" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">Special Education Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                        <div class="content swiper-slide">
+                            <img src="nimg/Occupational.webp" style="height: 300px;" alt="">
+                            <div class="text-content">
+                                <h3 style="color: white; ">Occupational Therapy</h3>
+
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+
+        <section class="echostar-services">
+    <div class="container">
+
+        <div class="section-title">
+            <span>What We Do</span>
+            <h2>Therapy Services</h2>
+        </div>
+
+        <div class="service-wrapper">
+
+            <!-- Left Image -->
+            <div class="service-image">
+                <img src="newimgg/service1.jpeg" alt="EchoStar Therapy">
+            </div>
+
+<div class="service-list">
+
+    <div class="service-item">Communication Skills Development</div>
+
+    <div class="service-item">Speech Therapy for Articulation & Pronunciation</div>
+
+    <div class="service-item">Language Development Programs</div>
+
+    <div class="service-item">Occupational Therapy for Daily Living Skills</div>
+
+    <div class="service-item">Oral Behavior Analysis (ABA) Therapy</div>
+
+    <div class="service-item">Sensory Integration & Processing Therapy</div>
+
+    <div class="service-item">Cognitive Function Skills Training</div>
+
+    <div class="service-item">Child Speech Therapy</div>
+
+    <div class="service-item">Occupational Therapy</div>
+
+    <div class="service-item">Autism Support Programs</div>
+
+    <div class="service-item">Early Intervention Programs</div>
+
+    <div class="service-item">Speech Therapy for Children</div>
+
+    <div class="service-item">Pediatric Occupational Therapy</div>
+
+    <div class="service-item">Autism Spectrum Disorder (ASD) Support</div>
+
+    <div class="service-item">Language & Learning Assessments</div>
+
+    <div class="service-item">Feeding & Swallowing Therapy</div>
+
+    <div class="service-item">Parent & Caregiver Training</div>
+
+    <div class="service-item">Speech Therapy Services</div>
+
+    <div class="service-item">Occupational Therapy Services</div>
+
+    <div class="service-item">Sensory Integration Therapy</div>
+
+    <div class="service-item">Language & Communication Therapy</div>
+
+
+
+
+
+
+    <div class="service-item">Augmentative Communication Support</div>
+
+<div class="service-item">Non-Verbal Communication Support</div>
+
+<div class="service-item">Down Syndrome Therapy</div>
+
+<div class="service-item">Expressive Language Therapy</div>
+
+<div class="service-item">Sentence Formation Therapy</div>
+
+<div class="service-item">Self-Care Skills Training</div>
+
+<div class="service-item">Remedial Therapy</div>
+
+<div class="service-item">Fluency Therapy</div>
+
+<div class="service-item">Fine Motor Skill Therapy</div>
+
+</div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<section class="echostar-services echostar-services-reverse">
+    <div class="container">
+
+        <div class="service-wrapper reverse-layout">
+
+            <!-- Left Services -->
+            <div class="service-list">
+
+                <div class="service-item">Adult Occupational Therapy</div>
+
+                <div class="service-item">Neurological Rehabilitation</div>
+
+                <div class="service-item">Orthopedic Rehabilitation</div>
+
+                <div class="service-item">Visual Motor Skills Training</div>
+
+                <div class="service-item">Visual Perceptual Skills Training</div>
+
+                <div class="service-item">Play Therapy</div>
+
+                <div class="service-item">Social Skills Training</div>
+
+                <div class="service-item">Occupational Therapy Consultation</div>
+
+                <div class="service-item">Occupational Therapy Assessments</div>
+
+                <div class="service-item">Pre-vocational Skills Training</div>
+
+                <div class="service-item">Feeding and Swallowing Therapy</div>
+
+                <div class="service-item">Early Intervention</div>
+
+                <div class="service-item">Speech Therapy for Children and Adults</div>
+
+                <div class="service-item">Autism Therapy Program</div>
+
+                <div class="service-item">ABA Therapy Services</div>
+
+                <div class="service-item">Occupational Therapy Support</div>
+
+                <div class="service-item">Speech & Language Therapy</div>
+
+                <div class="service-item">Sensory Integration Therapy</div>
+
+                <div class="service-item">Play Therapy Sessions</div>
+
+                <div class="service-item">Group Therapy Programs</div>
+
+                <div class="service-item">Early Intervention Speech Therapy</div>
+
+
+
+
+
+
+
+
+              <div class="service-item">Speech Therapy</div>
+
+<div class="service-item">Language and Communication Therapy</div>
+
+<div class="service-item">Oral Placement Therapy</div>
+
+<div class="service-item">Speech Clarity and Feeding</div>
+
+<div class="service-item">Adult Speech Therapy</div>
+
+<div class="service-item">Stammering Treatment</div>
+
+<div class="service-item">Stuttering Treatment</div>
+
+<div class="service-item">Kids Speech Therapy – Late Speaking Child Treatment</div>
+
+<div class="service-item">Occupational Therapy</div>
+
+<div class="service-item">ABA Therapy</div>
+
+<div class="service-item">Special Education</div>
+
+<div class="service-item">Group Therapy</div>
+
+<div class="service-item">Feeding Therapy</div>
+
+<div class="service-item">Behaviour Modification Therapy</div>
+
+<div class="service-item">Autism Therapy</div>
+
+<div class="service-item">Sensory Integration Therapy</div>
+
+<div class="service-item">Handwriting Improvement</div>
+
+<div class="service-item">Fine Motor Skills Development</div>
+
+<div class="service-item">Gross Motor Skills Development</div>
+
+<div class="service-item">Cognitive Rehabilitation</div>
+
+<div class="service-item">Stroke Rehabilitation</div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="service-image">
+                <img src="newimgg/service2.jpeg" style="width: 100%; border-radius: 8px; object-fit: cover; object-position: top; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);" alt="Adult Therapy">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+        <!-- Whychoose Us Section Two -->
+        <section class="whychoose-us-section-two" style="padding: 0px;">
+            <div class="wavecontainer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,192C384,171,480,149,576,149.3C672,149,768,171,864,197.3C960,224,1056,256,1152,234.7C1248,213,1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                <div class="auto-container">
+                    <div class="row">
+
+                        <div class="col-lg-6">
+                            <div class="sec-title">
+                                <h1>Why Choose Us ?</h1>
+                                <div class="text wow fadeInUp" data-wow-delay="200ms">
+                                    EchoStar Speech & Language Therapy Centre is a reputed name catering to speech and language-related issues of the number of children across the city.</div>
+                            </div>
+                            <div class="whychoose-block-two">
+                                <div class="content">
+                                    <h4>Our Vision :</h4>
+                                    <div class="text">We offer our patients robust, advanced, and personalized treatment and strive to bridge the gap by reaching out to them without hassle.</div>
+                                </div>
+                            </div>
+                            <div class="whychoose-block-two">
+                                <div class="content">
+                                    <h4>Our Goal</h4>
+                                    <div class="text"> We provide the best available therapy to each client as per their personalized needs. We offer tailor sessions to the clients, and our commitment to our work makes us stand out.</div>
+                                </div>
+                            </div>
+                            <div class="wrapper-box">
+
+                                <div class="contact-info-five">
+                                    <div class="icon-box"><span class="flaticon-phone-1"></span></div>
+                                    <h5>Need assitant for join with us?</h5>
+                                    <h4><a href="tel:+91-9812506562">+91-9812506562</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="image-block-two">
+
+                                <div class="image-one wow fadeInRight" data-wow-delay="200ms"><img src="nimg/ab1.jpg" style="height: 600px; "></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- Funfact Section -->
+        <section class="funfacts-section-two" style="background-image: url(images/background/bg-12.jpg);">
+            <div class="auto-container">
+                <div class="sec-title text-center light">
+
+                    <h1>SOME INTERESTING FACTS</h1>
+                </div>
+                <div class="outer-box">
+                    <div class="funfact-wrapper row">
+                        <!--Column-->
+                        <div class="col-lg-4 counter-block-two wow fadeInUp" data-wow-delay="300ms">
+                            <div class="inner-box">
+                                <div class="count-box">
+                                    <span class="prefix"></span><span class="count-text" data-speed="3000" data-stop="10">0</span><span class="affix">K</span>
+                                </div>
+                                <div class="text">Experience Year</div>
+                            </div>
+                        </div>
+                        <!--Column-->
+                        <div class="col-lg-4 counter-block-two wow fadeInUp" data-wow-delay="600ms">
+                            <div class="inner-box">
+                                <div class="count-box">
+                                    <span class="prefix"></span><span class="count-text" data-speed="3000" data-stop="10000">0</span><span class="affix">+</span>
+                                </div>
+                                <div class="text"> Traind Children</div>
+                            </div>
+                        </div>
+                        <!--Column-->
+                        <div class="col-lg-4 counter-block-two wow fadeInUp" data-wow-delay="300ms">
+                            <div class="inner-box">
+                                <div class="count-box">
+                                    <span class="prefix"></span><span class="count-text" data-speed="3000" data-stop="100">0</span><span class="affix">%</span>
+                                </div>
+                                <div class="text">Happy Clients</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section style="padding-bottom: 3rem; padding-top: 3rem;">
+            <center>
+                <h1 style="color: black; margin-bottom:2.5rem;">Our Gallery</h1>
+            </center>
+            <div class="auto-container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-1.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 1"></div>
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-2.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 2"></div>
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-3.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-4.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 4"></div>
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-5.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 5"></div>
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-6.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-7.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 7"></div>
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-8.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 8"></div>
+                    <div class="col-md-4 col-sm-6"><img src="newimgg/gallery-9.jpg" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); margin-bottom: 1.8rem; width: 100%; height: 360px; object-fit: cover; object-position: top; border-radius: 8px;" alt="Gallery 9"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section">
+            <div class="sec-bg-one" style="background-image: url(nimg/banner2.jpg);"></div>
+            <div class="sec-bg-two" style="background-image: url(nimg/test.jpg);"></div>
+            <div class="auto-container">
+                <div class="row align-items-lg-center justify-content-lg-between">
+                    <div class="col-lg-8">
+                        <div class="testimonial-carousel-wrapper">
+                            <div class="single-item-carousel owl-carousel owl-theme">
+                                <div class="testimonial-block-one">
+                                    <div class="inner-box">
+                                        <div class="author-box">
+                                            <div class="author-info">
+                                                <div class="image"><img src="nimg/man.jpeg" style="height: 99px;" alt=""></div>
+                                                <div class="author-title">Rahul Rajput</div>
+
+                                                <div class="logo"><img src="images/clients/client-6.html" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-box">
+
+                                            <div class="text">My nephew Anya was facing issues with her hearing and speaking skills.thanks to EchoStar for providing the best possible treatment and helping her improve.</div>
+                                            <div class="rating">
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                            </div>
+                                            <div class="quote"><span class="flaticon-quote"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-block-one">
+                                    <div class="inner-box">
+                                        <div class="author-box">
+                                            <div class="author-info">
+                                                <div class="image"><img src="nimg/man3.png" style="height: 99px;" alt=""></div>
+                                                <div class="author-title">Vishal Singha</div>
+
+                                                <div class="logo"><img src="images/clients/client-6.html" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-box">
+                                            <div class="text"> I have a wonderful experience at EchoStar during my child’s Bera test. The staff was highly skilled and knowledgeable.</div>
+                                            <div class="rating">
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                                <a href="#"><span class="fa fa-star"></span></a>
+                                            </div>
+                                            <div class="quote"><span class="flaticon-quote"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section style="margin-top: 2rem;">
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="default-form-area">
+                            <div class="sec-title">
+                                <h1 style="color: blueviolet;">Drop a line us</h1>
+                            </div>
+                            <form id="contact-form" name="contact_form" class="contact-form" action="http://steelthemes.com/demo/html/Goodsoul_html/inc/sendmail.php" method="post" style="border: 1px solid black; padding: 1rem; border-radius: 10px; ">
+                                <div class="row clearfix">
+                                    <div class="col-lg-6 col-md-6 column">
+                                        <div class="form-group">
+                                            <input type="text" name="form_name" class="form-control" value="" placeholder="Name" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 column">
+                                        <div class="form-group">
+                                            <input type="email" name="form_email" class="form-control required email" value="" placeholder="Email" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 column">
+                                        <div class="form-group">
+                                            <input type="text" name="form_phone" class="form-control" value="" placeholder="Phone" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 column">
+                                        <div class="form-group">
+                                            <select data-width="100%">
+                                                <option selected="selected">Interested In</option>
+                                                <option>ABA therapy</option>
+                                                <option>Speech Therapy</option>
+                                                <option>Occupational therapy</option>
+                                                <option>Consulting</option>
+                                                <option>special education</option>
+                                                <option>Oral Feeding</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 column">
+                                        <div class="form-group">
+                                            <textarea name="form_message" class="form-control textarea required" placeholder="Message...."></textarea>
+                                        </div>
+                                        <div class="form-group flex-box">
+                                            <div class="submit-btn">
+                                                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                                                <button class="theme-btn btn-style-one" type="submit" data-loading-text="Please wait..."><span>Send Message</span></button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="contact-info-three" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 25px;">
+                            <div class="single-info" style="width: 100%; text-align: center;">
+                                <h4 style="text-align: center; font-size: 24px; font-weight: 700; margin-bottom: 20px; color: #1a1a2e;">Quick Contact</h4>
+                                <div class="wrapper-box" style="display: flex; flex-direction: column; align-items: center; gap: 15px; margin-bottom: 0;">
+                                    <a href="mailto:echostar.india@gmail.com" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 15px; color: #444; font-weight: 500;">
+                                        <i class="fa-solid fa-envelope" style="color: #ff6f3c; font-size: 16px;"></i> echostar.india@gmail.com
+                                    </a>
+                                    <p style="margin: 0;">
+                                        <a href="tel:+91-9812506562" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-size: 15px; color: #444; font-weight: 500;">
+                                            <i class="fa-solid fa-phone" style="color: #ff6f3c; font-size: 16px;"></i> +91-9812506562
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+
+
+        <!-- Page Title -->
+        <section class="page-title" style="background-image:url(nimg/child.jpg); padding: 6rem;">
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>Get Touch With Us</h1>
+                    <center> <button class="button999"><a href="contact.html">Contact Us</a></button></center>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Main Footer -->
+        <footer class="main-footer style-five" style="background-color: #0099ff;">
+            <div class="auto-container">
+                <div class="widget-wrapper">
+                    <div class="row">
+                        <!-- Post Widget -->
+                        <div class="col-lg-4 col-md-6 about-widget-five footer-widget">
+                            <img src="nimg/logo-footer.png?v=9" style="height: 6.5rem; max-width: 320px; width: auto; object-fit: contain; margin-bottom: 20px;" alt="EchoStar">
+                            <!-- <h4 class="widget-title">About Us</h4> -->
+                            <div style="color: white;" class="text">The great explorer of the truth, theats masters builders off human happiness no one rejects all of dislikes, or avoids all pleasures itself, because it’s pleasures rationally encounter expounds actually our great explorer of
+                                thetruth.
+                            </div>
+
+                        </div>
+                        <!-- Link Widget -->
+                        <div class="col-lg-4 col-md-6 link-widget-three footer-widget">
+                            <h4 class="widget-title">quick Links</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li><a style="color: white;" href="index.html">Home</a></li>
+                                        <li><a style="color: white;" href="about.html">About Us</a></li>
+                                        <li><a style="color: white;" href="stutering.html">Service</a></li>
+                                        <li><a style="color: white;" href="gallery.html">Gallery</a></li>
+
+                                        <li><a style="color: white;" href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <ul>
+                                        <li><a style="color: white;" href="abatherapy.html">ABA Therapy</a></li>
+                                        <li><a style="color: white;" href="speech.html">Speech Therapy</a></li>
+                                        <li><a style="color: white;" href="language.html">Language Therapy</a></li>
+                                        <li><a style="color: white;" href="occupation.html">Occupational therapy</a></li>
+                                        <li><a style="color: white;" href="oralfeeding.html">Speech Clarity</a></li>
+                                        <li><a style="color: white;" href="specialedu.html">Special Education</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                                                <!-- Post Widget -->
+                        <div class="col-lg-4 col-md-6 about-widget-five footer-widget">
+                            <h4 class="widget-title">Address</h4>
+                            <div style="color: white; margin-bottom: 15px;" class="text"><i class="fa-solid fa-location-dot"></i> Gurugram, Sohna, Faridabad, Delhi</div>
+                            <h4 class="widget-title">Contact Us</h4>
+                            <ul>
+                                <li><strong><i class="fa-solid fa-phone"></i>Phone:</strong> <a style="color: white;" href="tel:+919812506562"> +91-9812506562 </a></li>
+                                <li><strong><i class="fa-solid fa-envelope"></i>Email:</strong> <a style="color: white;" href="mailto:echostar.india@gmail.com"> echostar.india@gmail.com </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div class="copy-right-text"><a style="color: white;" href="templateshub.net">Design & Developed by</a><a style="color: white;" class="theme-color-four" href="#">Eindiadeal</a></div>
+            </center>
+
+            </div>
+    </div>
+
+
+    </footer>
+
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+
+    <!--End pagewrapper-->
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            autoplay: {
+
+                delay: 1000,
+                disableOnInteraction: false,
+            }
+
+        });
+    </script>
+
+    <!-------------------github AOS---------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 2000,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".myySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 150,
+                modifier: 2.5,
+                slideShadows: true,
+            },
+            autoplay: {
+
+                delay: 2000,
+                disableOnInteraction: false,
+            }
+
+        });
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/menu-nav-btn.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/knob.js"></script>
+    <script src="js/isotope.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+<!-- Goodsoul_html/index-5.html  20 Nov 2019 03:30:27 GMT -->
+
+</html>

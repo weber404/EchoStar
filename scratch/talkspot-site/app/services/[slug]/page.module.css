@@ -1,0 +1,326 @@
+/* Page Header Banner */
+.banner {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);
+  padding: 120px 0 60px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 10% 20%, rgba(0, 145, 255, 0.15) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.bannerTitle {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.breadcrumbs a {
+  color: #cbd5e1;
+}
+
+.breadcrumbs a:hover {
+  color: var(--primary);
+}
+
+.breadcrumbLink {
+  color: #cbd5e1;
+}
+
+/* Content Grid Layout */
+.contentGrid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.detailsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Image Fallback */
+.imageFallback {
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.imageFallback::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 124, 0, 0.1);
+}
+
+.imageOverlayText {
+  background: linear-gradient(180deg, rgba(14, 42, 71, 0) 0%, rgba(14, 42, 71, 0.8) 100%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 30px 30px 30px;
+  color: white;
+}
+
+.imageOverlayText h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.imageOverlayText p {
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.detailTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--secondary);
+}
+
+.paragraphs p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-bottom: 16px;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: var(--radius-md);
+}
+
+.benefitsTitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.benefitCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.benefitIcon {
+  color: #10b981;
+  flex-shrink: 0;
+}
+
+/* Consultation Callout */
+.calloutCard {
+  background-color: var(--accent-light);
+  border: 1px dashed var(--accent);
+  padding: 30px;
+  border-radius: var(--radius-md);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.calloutIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.calloutCard h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--secondary);
+}
+
+.calloutCard p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-gray);
+}
+
+/* Sidebar Columns */
+.sidebarCol {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sidebarCard {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebarCardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.sidebarCardTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.directoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-light);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--secondary);
+  transition: var(--transition-fast);
+}
+
+.directoryItem:hover {
+  background-color: var(--primary);
+  color: white;
+  padding-left: 20px;
+}
+
+.activeDirectory {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Urgent CTA sidebar card */
+.ctaCard {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ctaCardTitle {
+  color: white;
+  font-size: 20px;
+}
+
+.ctaCard p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ctaNumberBox {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+}
+
+.ctaPhoneIcon {
+  color: var(--accent);
+}
+
+.ctaNumberBox span {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.ctaNumberBox a {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .imageFallback {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .calloutCard {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
