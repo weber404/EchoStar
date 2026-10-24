@@ -149,7 +149,7 @@ export default function AboutPage() {
                   <div className="image-block-two">
                     <div className="image-one">
                       <img
-                        src="/nimg/akash-chauhan.jpg"
+                        src="/nimg/akash-chauhan.jpg?v=2"
                         style={{ borderRadius: '20px', width: '100%', maxHeight: '480px', objectFit: 'cover' }}
                         alt="Akash Chauhan"
                       />
