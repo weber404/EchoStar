@@ -184,7 +184,7 @@ export default function HomePage() {
                 <div className="inner-box">
                   <div className="image">
                     <img
-                      src="/nimg/lang2.jpeg"
+                      src="/nimg/speech%20clarity.webp"
                       style={{
                         width: '100%',
                         height: '260px',
@@ -192,10 +192,10 @@ export default function HomePage() {
                         objectPosition: 'top',
                         borderRadius: '4px'
                       }}
-                      alt="Language & Communication Therapy"
+                      alt="Speech Clarity Therapy"
                     />
                     <div className="overlay">
-                      <Link to="/language" className="theme-btn btn-style-seven">
+                      <Link to="/oralfeeding" className="theme-btn btn-style-seven">
                         <span>More Details</span>
                       </Link>
                     </div>
@@ -203,7 +203,7 @@ export default function HomePage() {
                   <div className="lower-content">
                     <div className="wrapper-box">
                       <h4>
-                        <Link to="/language">Language and Communication Therapy</Link>
+                        <Link to="/oralfeeding">Speech Clarity Therapy</Link>
                       </h4>
                     </div>
                   </div>
