@@ -48,8 +48,8 @@ export default function Footer() {
             {/* Address & Contact Widget */}
             <div className="col-lg-4 col-md-6 about-widget-five footer-widget">
               <h4 className="widget-title">Address</h4>
-              <div style={{ color: 'white', marginBottom: '15px' }} className="text">
-                <i className="fa-solid fa-location-dot"></i> Gurugram, Sohna, Faridabad, Delhi
+              <div style={{ color: 'white', marginBottom: '15px', lineHeight: '1.6' }} className="text">
+                <i className="fa-solid fa-location-dot"></i> Plot No. 1113, Golden Place Hotel, in Basement Opp. Medanta Hospital, Near Gurudwara Jharsa, Sector 39, Gurugram, Haryana 122003
               </div>
               <h4 className="widget-title">Contact Us</h4>
               <ul>

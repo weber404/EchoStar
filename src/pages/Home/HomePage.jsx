@@ -767,6 +767,22 @@ export default function HomePage() {
                     className="wrapper-box"
                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px', marginBottom: 0 }}
                   >
+                    <div
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '10px',
+                        fontSize: '14px',
+                        color: '#444',
+                        fontWeight: 500,
+                        lineHeight: '1.5',
+                        maxWidth: '300px'
+                      }}
+                    >
+                      <i className="fa-solid fa-location-dot" style={{ color: '#ff6f3c', fontSize: '18px', flexShrink: 0 }}></i>
+                      <span>Plot No. 1113, Golden Place Hotel, in Basement Opp. Medanta Hospital, Near Gurudwara Jharsa, Sector 39, Gurugram, Haryana 122003</span>
+                    </div>
                     <a
                       href="mailto:echostar.india@gmail.com"
                       style={{
