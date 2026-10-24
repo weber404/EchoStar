@@ -17,7 +17,7 @@ import LanguageTherapyPage from './pages/service-details/LanguageTherapyPage';
 import OralFeedingPage from './pages/service-details/OralFeedingPage';
 import StutteringPage from './pages/service-details/StutteringPage';
 import SpecialEducationPage from './pages/service-details/SpecialEducationPage';
-import OccupationalTherapyPage from './pages/service-details/OccupationalTherapyPage';
+
 
 function ScrollToTopOnRoute() {
   const { pathname } = useLocation();
@@ -71,9 +71,6 @@ export default function App() {
 
           <Route path="/specialedu" element={<SpecialEducationPage />} />
           <Route path="/specialedu.html" element={<SpecialEducationPage />} />
-
-          <Route path="/occupation" element={<OccupationalTherapyPage />} />
-          <Route path="/occupation.html" element={<OccupationalTherapyPage />} />
 
           {/* Catch-all */}
           <Route path="*" element={<HomePage />} />

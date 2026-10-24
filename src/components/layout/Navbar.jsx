@@ -36,7 +36,7 @@ export default function Navbar() {
 
   const isServicesActive = [
     '/services', '/service', '/abatherapy', '/speech', '/language',
-    '/oralfeeding', '/stutering', '/specialedu', '/occupation'
+    '/oralfeeding', '/stutering', '/specialedu'
   ].some(p => location.pathname === p || location.pathname === `${p}.html`);
 
   const navLinks = (
@@ -68,9 +68,6 @@ export default function Navbar() {
           <li className={isActive(['/specialedu', '/specialedu.html']) ? 'current' : ''}>
             <Link to="/specialedu">Special Education Therapy</Link>
           </li>
-          <li className={isActive(['/occupation', '/occupation.html']) ? 'current' : ''}>
-            <Link to="/occupation">Occupational Therapy</Link>
-          </li>
         </ul>
       </li>
       <li className={isActive(['/gallery', '/gallery.html']) ? 'current' : ''}>
@@ -97,7 +94,7 @@ export default function Navbar() {
                         src="/nimg/logo3.png?v=9"
                         alt="EchoStar"
                         title="EchoStar"
-                        style={{ height: '6.5rem', maxWidth: '340px', width: 'auto', objectFit: 'contain' }}
+                        style={{ height: '5rem', maxWidth: '250px', width: 'auto', objectFit: 'contain' }}
                       />
                     </Link>
                   </div>
@@ -131,7 +128,7 @@ export default function Navbar() {
                     <Link to="/">
                       <img
                         src="/nimg/logo3.png?v=9"
-                        style={{ height: '4.8rem', maxWidth: '250px', width: 'auto', objectFit: 'contain' }}
+                        style={{ height: '4rem', maxWidth: '200px', width: 'auto', objectFit: 'contain' }}
                         alt="EchoStar"
                         title="EchoStar"
                       />
@@ -165,7 +162,7 @@ export default function Navbar() {
                 <img
                   src="/nimg/logo3.png?v=9"
                   alt="EchoStar"
-                  style={{ height: '4.5rem', maxWidth: '230px', width: 'auto', objectFit: 'contain' }}
+                  style={{ height: '4rem', maxWidth: '200px', width: 'auto', objectFit: 'contain' }}
                 />
               </Link>
             </div>
@@ -225,9 +222,6 @@ export default function Navbar() {
                       </li>
                       <li className={isActive(['/specialedu', '/specialedu.html']) ? 'current' : ''}>
                         <Link to="/specialedu">Special Education Therapy</Link>
-                      </li>
-                      <li className={isActive(['/occupation', '/occupation.html']) ? 'current' : ''}>
-                        <Link to="/occupation">Occupational Therapy</Link>
                       </li>
                     </ul>
                   </li>

@@ -243,7 +243,6 @@ export default function AboutPage() {
                           <option value="Interested In">Interested In</option>
                           <option value="ABA therapy">ABA therapy</option>
                           <option value="Speech Therapy">Speech Therapy</option>
-                          <option value="Occupational therapy">Occupational therapy</option>
                           <option value="Consulting">Consulting</option>
                           <option value="special education">special education</option>
                           <option value="Oral Feeding">Oral Feeding</option>

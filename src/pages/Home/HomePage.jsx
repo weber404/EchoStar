@@ -17,6 +17,19 @@ const galleryHomeImages = [
   { id: 9, src: '/newimgg/gallery-9.jpg', alt: 'Gallery 9' }
 ];
 
+const serviceCards = [
+  { title: 'ABA Therapy', img: '/nimg/Aba%20therapy.jpg', link: '/abatherapy' },
+  { title: 'Speech Therapy', img: '/nimg/speech.jpg', link: '/speech' },
+  { title: 'Language & Communication Therapy', img: '/nimg/language.jpeg', link: '/language' },
+  { title: 'Oral Feeding Therapy', img: '/nimg/oral.jpg', link: '/oralfeeding' },
+  { title: 'Speech Clarity Therapy', img: '/nimg/speech%20clarity.webp', link: '/oralfeeding' },
+  { title: 'Stuttering Stammering Therapy', img: '/nimg/sluttering.jpeg', link: '/stutering' },
+  { title: 'Special Education Therapy', img: '/nimg/special.jpg', link: '/specialedu' },
+];
+
+// Duplicate list so Swiper Coverflow has enough continuous slides for loop mode on any screen width
+const carouselSlides = [...serviceCards, ...serviceCards, ...serviceCards];
+
 export default function HomePage() {
   const [formData, setFormData] = useState({
     form_name: '',
@@ -52,27 +65,6 @@ export default function HomePage() {
           navigation={true}
           className="banner-slider"
         >
-          {/* Slide 1 */}
-          <SwiperSlide
-            style={{
-              backgroundImage: 'url(/newimgg/test.jpg)',
-              backgroundPosition: 'center top',
-              backgroundSize: 'cover'
-            }}
-          >
-            <div className="content-outer">
-              <div className="content-box">
-                <div className="inner">
-                  <h1>Occupational <br /> Therapy</h1>
-                  <div className="link-box">
-                    <Link to="/contact" className="theme-btn btn-style-sixteen">
-                      <span>Contact Us</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
 
           {/* Slide 2 */}
           <SwiperSlide
@@ -126,7 +118,7 @@ export default function HomePage() {
           <div className="cause-wrapper">
             <div className="row">
               {/* Block 1 */}
-              <div className="cause-block-two col-lg-4">
+              <div className="cause-block-two col-lg-4 col-md-6">
                 <div className="inner-box">
                   <div className="image">
                     <img
@@ -157,7 +149,7 @@ export default function HomePage() {
               </div>
 
               {/* Block 2 */}
-              <div className="cause-block-two col-lg-4">
+              <div className="cause-block-two col-lg-4 col-md-6">
                 <div className="inner-box">
                   <div className="image">
                     <img
@@ -188,11 +180,11 @@ export default function HomePage() {
               </div>
 
               {/* Block 3 */}
-              <div className="cause-block-two col-lg-4">
+              <div className="cause-block-two col-lg-4 col-md-6">
                 <div className="inner-box">
                   <div className="image">
                     <img
-                      src="/newimgg/tt.jpeg"
+                      src="/nimg/lang2.jpeg"
                       style={{
                         width: '100%',
                         height: '260px',
@@ -200,10 +192,10 @@ export default function HomePage() {
                         objectPosition: 'top',
                         borderRadius: '4px'
                       }}
-                      alt="Occupational Therapy"
+                      alt="Language & Communication Therapy"
                     />
                     <div className="overlay">
-                      <Link to="/occupation" className="theme-btn btn-style-seven">
+                      <Link to="/language" className="theme-btn btn-style-seven">
                         <span>More Details</span>
                       </Link>
                     </div>
@@ -211,7 +203,7 @@ export default function HomePage() {
                   <div className="lower-content">
                     <div className="wrapper-box">
                       <h4>
-                        <Link to="/occupation">Occupational Therapy</Link>
+                        <Link to="/language">Language and Communication Therapy</Link>
                       </h4>
                     </div>
                   </div>
@@ -288,6 +280,7 @@ export default function HomePage() {
             grabCursor={true}
             centeredSlides={true}
             loop={true}
+            loopAdditionalSlides={4}
             slidesPerView="auto"
             initialSlide={2}
             coverflowEffect={{
@@ -303,62 +296,17 @@ export default function HomePage() {
             }}
             className="mySwiper"
           >
-            <SwiperSlide className="content">
-              <img src="/nimg/Aba%20therapy.jpg" alt="ABA Therapy" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>ABA Therapy</h3>
-                <Link to="/abatherapy"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/speech.jpg" alt="Speech Therapy" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Speech Therapy</h3>
-                <Link to="/speech"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/language.jpeg" alt="Language Therapy" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Language & Communication Therapy</h3>
-                <Link to="/language"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/oral.jpg" alt="Oral Feeding" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Oral Feeding Therapy</h3>
-                <Link to="/oralfeeding"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/speech%20clarity.webp" alt="Speech Clarity" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Speech Clarity Therapy</h3>
-                <Link to="/oralfeeding"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/sluttering.jpeg" alt="Stuttering" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Stuttering Stammering Therapy</h3>
-                <Link to="/stutering"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/special.jpg" alt="Special Education" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Special Education Therapy</h3>
-                <Link to="/specialedu"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="content">
-              <img src="/nimg/Occupational.webp" alt="Occupational Therapy" />
-              <div className="text-content">
-                <h3 style={{ color: 'white' }}>Occupational Therapy</h3>
-                <Link to="/occupation"><button className="btn">Read more</button></Link>
-              </div>
-            </SwiperSlide>
+            {carouselSlides.map((service, index) => (
+              <SwiperSlide key={`service-slide-${index}`} className="content">
+                <img src={service.img} alt={service.title} />
+                <div className="text-content">
+                  <h3 style={{ color: 'white' }}>{service.title}</h3>
+                  <Link to={service.link}>
+                    <button className="btn">Read more</button>
+                  </Link>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </section>
       </section>
@@ -378,22 +326,18 @@ export default function HomePage() {
               <div className="service-item">Communication Skills Development</div>
               <div className="service-item">Speech Therapy for Articulation & Pronunciation</div>
               <div className="service-item">Language Development Programs</div>
-              <div className="service-item">Occupational Therapy for Daily Living Skills</div>
               <div className="service-item">Oral Behavior Analysis (ABA) Therapy</div>
               <div className="service-item">Sensory Integration & Processing Therapy</div>
               <div className="service-item">Cognitive Function Skills Training</div>
               <div className="service-item">Child Speech Therapy</div>
-              <div className="service-item">Occupational Therapy</div>
               <div className="service-item">Autism Support Programs</div>
               <div className="service-item">Early Intervention Programs</div>
               <div className="service-item">Speech Therapy for Children</div>
-              <div className="service-item">Pediatric Occupational Therapy</div>
               <div className="service-item">Autism Spectrum Disorder (ASD) Support</div>
               <div className="service-item">Language & Learning Assessments</div>
               <div className="service-item">Feeding & Swallowing Therapy</div>
               <div className="service-item">Parent & Caregiver Training</div>
               <div className="service-item">Speech Therapy Services</div>
-              <div className="service-item">Occupational Therapy Services</div>
               <div className="service-item">Sensory Integration Therapy</div>
               <div className="service-item">Language & Communication Therapy</div>
               <div className="service-item">Augmentative Communication Support</div>
@@ -415,22 +359,18 @@ export default function HomePage() {
         <div className="container">
           <div className="service-wrapper reverse-layout">
             <div className="service-list">
-              <div className="service-item">Adult Occupational Therapy</div>
               <div className="service-item">Neurological Rehabilitation</div>
               <div className="service-item">Orthopedic Rehabilitation</div>
               <div className="service-item">Visual Motor Skills Training</div>
               <div className="service-item">Visual Perceptual Skills Training</div>
               <div className="service-item">Play Therapy</div>
               <div className="service-item">Social Skills Training</div>
-              <div className="service-item">Occupational Therapy Consultation</div>
-              <div className="service-item">Occupational Therapy Assessments</div>
               <div className="service-item">Pre-vocational Skills Training</div>
               <div className="service-item">Feeding and Swallowing Therapy</div>
               <div className="service-item">Early Intervention</div>
               <div className="service-item">Speech Therapy for Children and Adults</div>
               <div className="service-item">Autism Therapy Program</div>
               <div className="service-item">ABA Therapy Services</div>
-              <div className="service-item">Occupational Therapy Support</div>
               <div className="service-item">Speech & Language Therapy</div>
               <div className="service-item">Sensory Integration Therapy</div>
               <div className="service-item">Play Therapy Sessions</div>
@@ -444,7 +384,6 @@ export default function HomePage() {
               <div className="service-item">Stammering Treatment</div>
               <div className="service-item">Stuttering Treatment</div>
               <div className="service-item">Kids Speech Therapy – Late Speaking Child Treatment</div>
-              <div className="service-item">Occupational Therapy</div>
               <div className="service-item">ABA Therapy</div>
               <div className="service-item">Special Education</div>
               <div className="service-item">Group Therapy</div>
@@ -778,7 +717,6 @@ export default function HomePage() {
                           <option value="Interested In">Interested In</option>
                           <option value="ABA therapy">ABA therapy</option>
                           <option value="Speech Therapy">Speech Therapy</option>
-                          <option value="Occupational therapy">Occupational therapy</option>
                           <option value="Consulting">Consulting</option>
                           <option value="special education">special education</option>
                           <option value="Oral Feeding">Oral Feeding</option>

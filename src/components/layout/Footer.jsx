@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="col-lg-4 col-md-6 about-widget-five footer-widget">
               <img
                 src="/nimg/logo-footer.png?v=9"
-                style={{ height: '6.5rem', maxWidth: '320px', width: 'auto', objectFit: 'contain', marginBottom: '20px' }}
+                style={{ height: '5rem', maxWidth: '250px', width: 'auto', objectFit: 'contain', marginBottom: '20px' }}
                 alt="EchoStar"
               />
               <div style={{ color: 'white' }} className="text">
@@ -38,7 +38,6 @@ export default function Footer() {
                     <li><Link style={{ color: 'white' }} to="/abatherapy">ABA Therapy</Link></li>
                     <li><Link style={{ color: 'white' }} to="/speech">Speech Therapy</Link></li>
                     <li><Link style={{ color: 'white' }} to="/language">Language Therapy</Link></li>
-                    <li><Link style={{ color: 'white' }} to="/occupation">Occupational therapy</Link></li>
                     <li><Link style={{ color: 'white' }} to="/oralfeeding">Speech Clarity</Link></li>
                     <li><Link style={{ color: 'white' }} to="/specialedu">Special Education</Link></li>
                   </ul>
